@@ -12,7 +12,7 @@
   "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Narcooo/inkos.git",
+    "url": "https://github.com/ruiworm/inkos.git",
     "directory": "packages/studio"
   },
   "scripts": {

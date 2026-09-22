@@ -1,0 +1,53 @@
+appId: com.novelforge.studio
+productName: NovelForge
+copyright: Copyright © 2026 NovelForge
+
+directories:
+  output: release
+
+files:
+  - dist/**/*
+  - package.json
+
+extraResources:
+  - from: ../studio/dist
+    to: studio-dist
+    filter:
+      - "**/*"
+      - "!api/**/*"
+  - from: ../studio/dist/api
+    to: server/api
+    filter:
+      - "**/*"
+
+win:
+  signAndEditExecutable: false
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: zip
+      arch:
+        - x64
+  artifactName: NovelForge-${version}-win-${arch}-setup.${ext}
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: NovelForge Studio
+
+mac:
+  target:
+    - target: zip
+      arch:
+        - x64
+        - arm64
+    - target: tar.gz
+      arch:
+        - x64
+        - arm64
+  artifactName: NovelForge-${version}-mac-${arch}.${ext}
+  category: public.app-category.productivity
+  identity: null

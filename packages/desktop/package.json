@@ -1,0 +1,26 @@
+{
+  "name": "novelforge-desktop",
+  "version": "1.8.0",
+  "private": true,
+  "description": "NovelForge Desktop - AI-native story creation & production studio",
+  "author": "NovelForge",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build:main": "tsc -p tsconfig.json",
+    "build": "pnpm build:main",
+    "package:win": "electron-builder --win --x64 -c electron-builder.yml",
+    "package:mac": "electron-builder --mac --x64 -c electron-builder.yml",
+    "package:all": "electron-builder --win --mac --x64 -c electron-builder.yml"
+  },
+  "dependencies": {
+    "@actalk/inkos-core": "workspace:*",
+    "@actalk/inkos-studio": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.15",
+    "electron": "^34.3.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.9.3"
+  }
+}

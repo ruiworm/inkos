@@ -2,7 +2,7 @@
 // 内联为组件，避免 Vite 静态资源/类型声明依赖。渐变 id 加 inkos- 前缀防全局冲突。
 export function InkosLogo({ className }: { readonly className?: string }) {
   return (
-    <svg viewBox="0 0 512 512" fill="none" className={className} role="img" aria-label="InkOS">
+    <svg viewBox="0 0 512 512" fill="none" className={className} role="img" aria-label="NovelForge">
       <defs>
         <linearGradient id="inkos-bg" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#2d1b0e" />

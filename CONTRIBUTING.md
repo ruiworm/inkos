@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/Narcooo/inkos.git
+git clone https://github.com/ruiworm/inkos.git
 cd inkos
 pnpm install
 pnpm build
@@ -86,4 +86,4 @@ For features touching the LLM pipeline, mock the LLM calls — don't make real A
 
 ## Questions?
 
-Open an issue or check existing ones: https://github.com/Narcooo/inkos/issues
+Open an issue or check existing ones: https://github.com/ruiworm/inkos/issues
